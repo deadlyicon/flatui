@@ -3,6 +3,6 @@ require "flatui/version"
 module Flatui
   module Rails
     class Engine < ::Rails::Engine
-    end
+    end if defined? ::Rails::Engine
   end
 end
